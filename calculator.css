@@ -1,0 +1,45 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: chocolate;
+    font-family: sans-serif;
+}
+.calculator{
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 2px rgb(0,0,0.1);
+    overflow: hidden;
+}
+#display {
+background-color: white;
+color: red;
+font-size: 2em;
+padding: 10px;
+text-align: right;
+box-sizing: border-box;
+}
+.buttons{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 5px;
+}
+.btn{
+    padding: 20px;
+    font-size: 1.5em;
+    border: 1px;
+    color: black;
+    cursor: pointer;
+    transition: bacground-color 0.2s;
+    background-color: white;
+}
+.btn:hover{
+    background-color: rgb(111, 148,148);
+}
+.operator{
+    background-color: blue;
+    color: red;
+}
+.operator:hover{
+background-color: rgb(236, 21, 122);
+}
